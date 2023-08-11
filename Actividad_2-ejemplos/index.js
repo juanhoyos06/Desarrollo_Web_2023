@@ -97,4 +97,6 @@ const crearNombreCompleto = (nombre, apellido) => {
     }
 
 }
+const botoneshtml = document.getElementsByTagName('button')
+console.log(botoneshtml);
 crearNombreCompleto(nombre, "hoyos");
