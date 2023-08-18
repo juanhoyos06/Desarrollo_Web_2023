@@ -63,31 +63,40 @@
         </center>
         <form action="javascript:void(0)" onsubmit="getDataForm()">
           <label for="txtName">Nombre:</label>
-          <input id="txtName" name="txtName" type="text" 
-          placeholder="Ingrese su nombre">
+          <input required id="txtName" name="txtName" type="text" 
+          placeholder="Ingrese su nombre" class="form-control">
           <br>
           <br>
-          <label for="txtEmail">Correo:</label>
+          <label for="txtEmail" class="form-label">Correo:</label>
           <input id="txtEmail" name="txtEmail" type="text" 
-          placeholder="Ingrese su correo">
+          placeholder="Ingrese su correo" class="form-control">
           <br>
-          <label for="txtTask">Descripcion tarea:</label>
+          <label for="txtTask" class="form-label">Descripcion tarea:</label>
           <br>
           <textarea name="txtTask" id="txtTask"
-          cols="10" rows="3"></textarea>
+          cols="10" rows="3"
+          class="form-control"></textarea>
           <br>
-          <input type="checkbox" name="txtConditions" id="txtConditions">
-          <label for="txtConditions">
+          <input class="form-check-input" type="checkbox" name="txtConditions" id="txtConditions">
+          <label for="txtConditions" class="form-label">
             <a href="http://google.com" target="_blank">Acepta terminos y condiciones:</a>
           </label>
           <br>
-          <label for="taskType">Tipo de tarea</label>
+          <label for="taskType" class="form-label">Tipo de tarea</label>
           <br>
-          <input type="radio" name="taskType" id="activityType">Actividad
+          <input class="form-check-input" type="radio" name="taskType" id="activityType">Actividad
           <br>
-          <input type="radio" name="taskType" id="taskType">Tarea
+          <input class="form-check-input" type="radio" name="taskType" id="taskType">Tarea
           <br><br>
-          <input type="submit" value="Enviar">
+          <label for="semester" class="form-label">Semestre</label>
+          <select class="form-control" name="semester" id="semester">
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            
+          </select>
+          <br>
+          <input type="submit" value="Enviar" class="btn btn-primary">
         </form>
       </div>
 
