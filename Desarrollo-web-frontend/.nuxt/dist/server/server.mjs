@@ -1,1 +1,0 @@
-export { default } from "file:///C:/Users/jphoy/Desktop/Semestre_VI/Desarrollo_Web/Desarrollo_Web_2023/Desarrollo-web-frontend/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
